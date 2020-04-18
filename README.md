@@ -40,6 +40,18 @@ update your bug via
 `$ bugmark update <bug name> <update>`  
 or  
 `$ bugmark update <bug name>`  
-which like the mark command, will put you in an editor to write the update. The
-update is appended to the previous description with a divider that contains a
-timestamp.  
+which like the `mark `command, will put you in an editor to write the update.
+The update is appended to the previous description with a divider that contains
+a timestamp.  
+
+Like we said earlier, you can get a list of your stale bugs. The command is:  
+`$ bugmark stale`  
+which will give you a list of all the stale bugmarks in the PWD. If you want a
+list of all your stale bugmarks you may use a flag:  
+`$ bugmark stale --all`
+
+By default, stale is defined as living for longer than 7 days, but you can
+configure this via:  
+`$ bugmark configure stale=X`  
+where `X` is the (integer) number of days stale is defined as. Each directory
+with bugmarks can have its own definition of stale.  
