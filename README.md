@@ -11,35 +11,35 @@ modules. For those, you're better off with a more heavy duty bug-tracking system
 (and probably distributed since you probably aren't coding something of that
 scale alone). Now we'll go through a typical workflow with bugmark.
 
-Here is how to create a bugmark:
+Here is how to create a bugmark:  
 
-`$ bugmark mark <bug name> <bug description>`
-or
-`$ bugmark mark <bug name>`
+`$ bugmark mark <bug name> <bug description>`  
+or  
+`$ bugmark mark <bug name>`  
 which will put you into your editor of choice to write the description of the
 bug. You may not have duplicate names. If you think you do, you should probably
 resolve your old bugmark. Marking will also create a timestamp on that bug that
-you can use later for checking in on stale bugs.
+you can use later for checking in on stale bugs.  
 
-If your project has a few bugmarks you can get a list of them via
-`$ bugmark list`
+If your project has a few bugmarks you can get a list of them via  
+`$ bugmark list`  
 which will list the names of all the bugmarks created in the PWD. This implies
-that subdirectories have independent bugmarks (as we mention earlier).
+that subdirectories have independent bugmarks (as we mention earlier).  
 
-Once a bugmark is created, you can read the description of that bug via
-`$ bugmark info <bug name>`
-which will print out the description you wrote earlier.
+Once a bugmark is created, you can read the description of that bug via  
+`$ bugmark info <bug name>`  
+which will print out the description you wrote earlier.  
 
-Once you resolve this bug you can mark it resolved (delete it) it via
-`$ bugmark resolve <bug name>`
+Once you resolve this bug you can mark it resolved (delete it) it via  
+`$ bugmark resolve <bug name>`  
 which also makes the name of that bug available (if you run into the same bug
-or very similar bug).
+or very similar bug).  
 
 If you make significant progress on a bug but don't quite resolve it you can
-update your bug via
-`$ bugmark update <bug name> <update>`
-or
-`$ bugmark update <bug name>`
+update your bug via  
+`$ bugmark update <bug name> <update>`  
+or  
+`$ bugmark update <bug name>`  
 which like the mark command, will put you in an editor to write the update. The
 update is appended to the previous description with a divider that contains a
-timestamp.
+timestamp.  
